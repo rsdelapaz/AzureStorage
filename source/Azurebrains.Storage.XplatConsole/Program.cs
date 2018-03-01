@@ -17,12 +17,12 @@ namespace Azurebrains.Storage.XplatConsole
             if (args.Length > 0 && args[0].Length > 0)
                 BlobClient = new Client(args[0]);
             else
-                BlobClient = new Client("http://localhost:5555/api/ValetKey/");
+                BlobClient = new Client("http://localhost:8000/api/ValetKey/");
 
-            var ficheros = new Dictionary<string, string>() {
-                { "myAcclaim1.png", ".\\myAcclaim.png" },
-                { "myAcclaim2.png", ".\\myAcclaim.png" },
-                { "myAcclaim3.png", ".\\myAcclaim.png" }
+            var ficheros = new Dictionary<string, string>() { 
+                { "myAcclaim1.png", "./myAcclaim.png" },
+                { "myAcclaim2.png", "./myAcclaim.png" },
+                { "myAcclaim3.png", "./myAcclaim.png" }
             };
             var blobs = BlobClient.Load("prueba", ficheros, segment * 1024 , "2017-07-29");
 

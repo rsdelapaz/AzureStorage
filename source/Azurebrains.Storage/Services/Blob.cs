@@ -280,8 +280,9 @@ namespace Azurebrains.Storage.Services
                 BlockCompleted(_name, blockID, _blockList[blockID], 200);
             }
             catch (Exception ex)
-            {
-                BlockCompleted(_name, blockID, _blockList[blockID], 500);                
+            {                
+                BlockCompleted(_name, blockID, _blockList[blockID], 500);
+                Console.Write(ex.Message);
             }
         }
         public void PutBlockList()
