@@ -17,7 +17,7 @@ namespace Azurebrains.Storage.XplatConsole
             if (args.Length > 0 && args[0].Length > 0)
                 BlobClient = new Client(args[0]);
             else
-                BlobClient = new Client("http://localhost:8000/api/ValetKey/");
+                BlobClient = new Client("http://localhost/api/ValetKey/");
 
             var ficheros = new Dictionary<string, string>() { 
                 { "myAcclaim1.png", "./myAcclaim.png" },
