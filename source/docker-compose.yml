@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  azurebrains.valetkey.webapi:
+    image: azurebrains.valetkey.webapi
+    build:
+      context: .
+      dockerfile: Azurebrains.ValetKey.WebAPI/Dockerfile
+
+  azurebrains.storage.webspa:
+    image: azurebrains.storage.webspa
+    build:
+      context: .
+      dockerfile: Azurebrains.Storage.WebSPA/Dockerfile
+

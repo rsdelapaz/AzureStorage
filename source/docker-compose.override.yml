@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  azurebrains.valetkey.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:80"
+
+  azurebrains.storage.webspa:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80:80"
+

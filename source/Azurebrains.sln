@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azurebrains.Storage.XplatCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azurebrains.ValetKey.WebAPI", "Azurebrains.ValetKey.WebAPI\Azurebrains.ValetKey.WebAPI.csproj", "{29519DC2-0B2B-4649-BE15-2F84C4B1F387}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2F7D6318-9E2D-474E-A37B-3379F5979DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azurebrains.Storage.WebSPA", "Azurebrains.Storage.WebSPA\Azurebrains.Storage.WebSPA.csproj", "{82C4EE75-7DCA-4AAD-873C-2F1A1ABC8478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{29519DC2-0B2B-4649-BE15-2F84C4B1F387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29519DC2-0B2B-4649-BE15-2F84C4B1F387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29519DC2-0B2B-4649-BE15-2F84C4B1F387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7D6318-9E2D-474E-A37B-3379F5979DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7D6318-9E2D-474E-A37B-3379F5979DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7D6318-9E2D-474E-A37B-3379F5979DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7D6318-9E2D-474E-A37B-3379F5979DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C4EE75-7DCA-4AAD-873C-2F1A1ABC8478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C4EE75-7DCA-4AAD-873C-2F1A1ABC8478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C4EE75-7DCA-4AAD-873C-2F1A1ABC8478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C4EE75-7DCA-4AAD-873C-2F1A1ABC8478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
