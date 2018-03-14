@@ -1,14 +1,14 @@
 FROM microsoft/aspnetcore:2.0 AS base
 WORKDIR /app
-EXPOSE 8080
+EXPOSE 80
 
 FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
-COPY *.sln ./
-COPY Azurebrains.ValetKey.WebAPI/Azurebrains.ValetKey.WebAPI.csproj Azurebrains.ValetKey.WebAPI/
-RUN dotnet restore
+COPY Azurebrains.sln ./
+COPY Azurebrains.Storage.WebSPA/Azurebrains.Storage.WebSPA.csproj Azurebrains.Storage.WebSPA/
+RUN dotnet restore -nowarn:msb3202,nu1503
 COPY . .
-WORKDIR /src/Azurebrains.ValetKey.WebAPI
+WORKDIR /src/Azurebrains.Storage.WebSPA
 RUN dotnet build -c Release -o /app
 
 FROM build AS publish
@@ -17,4 +17,4 @@ RUN dotnet publish -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Azurebrains.ValetKey.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "Azurebrains.Storage.WebSPA.dll"]
